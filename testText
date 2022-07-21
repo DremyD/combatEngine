@@ -1,0 +1,74 @@
+//TA Haley	Dice Roller	09/16/2020
+
+let d4 = Math.floor(Math.random() * 4) + 1;
+let d6 = Math.floor(Math.random() * 6) + 1;
+let d8one = Math.floor(Math.random() * 8) + 1;
+let d8two = Math.floor(Math.random() * 8) + 1;
+let d10 = Math.floor(Math.random() * 10) + 1;
+let d12 = Math.floor(Math.random() * 12) + 1;
+let d20 = Math.floor(Math.random() * 20) + 1;
+let d100 = Math.floor(Math.random() * 100) + 1;
+
+let myModifier = 3;
+let monsterAC = 13;
+let monsterHP = 12;
+let atk = 3*d6
+let myDamage = Math.floor(Math.random()*(atk)) +1
+// let myDamage = d8one + d8two + 3;
+let doubleDamage = myDamage * 2;
+
+ // || i!==10
+// monsterHP >= 0
+for (let i=0, monsterHP=122; monsterHP <= 0; i++){
+  d20=Math.floor(Math.random()*20)
+let toHit = d20 + myModifier;
+  if (d20>=monsterAC){
+   console.log(`this works!`)
+   console.log(i, toHit)
+   console.log(atk)
+    monsterHP = monsterHP - atk
+   console.log(monsterHP)
+  // }
+  // console.log(monsterHP=monsterHP-atk)
+// if (d20 === 20){
+//   console.log("Critical Hit!");
+//   console.log("Double Damage! " + doubleDamage);
+//   console.log(`${monsterHP-doubleDamage}`)
+//   monsterHP
+// } 
+// else if (d20 === 1){
+// 	console.log(`${d20} Critical Failure!!!`);
+//   console.log(`I meant to do that!!`)
+// } else {
+		// if (toHit >= monsterAC){
+		// 	console.log("It's a hit! Damage: " + myDamage);
+		// 	console.log("Attack Roll: " + toHit);
+  //     console.log(`${(monsterHP - myDamage)}`);
+  //     monsterHP=monsterHP-myDamage
+		} else {
+			console.log("Sorry, you missed...");
+      // console.log(monsterHP)
+		}
+// }
+}
+
+
+
+// let myModifier = 3;
+// let monsterAC = 13;
+// let myDamage = d8one + d8two + 3;
+// let toHit = d20 + myModifier;
+// let doubleDamage = myDamage * 2;
+// if (d20 === 20){
+// console.log("Critical Hit!");
+// console.log("Double Damage! " + doubleDamage);
+// } else if (d20 === 1){
+// 	console.log("Critical Failure!!!");
+// } else {
+// 		if (toHit >= monsterAC){
+// 			console.log("It's a hit! Damage: " + myDamage);
+// 			console.log("Attack Roll: " + toHit);
+// 		} else {
+// 			console.log("Sorry, you missed...");
+// 		}
+// }
